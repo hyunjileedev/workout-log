@@ -1,7 +1,8 @@
 import './app.css';
+import Workout from './components/workout';
 
 function App() {
-  return <h1>Hello 🖐</h1>;
+  return <Workout />;
 }
 
 export default App;

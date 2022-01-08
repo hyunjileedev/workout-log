@@ -1,0 +1,75 @@
+/* Global */
+:root {
+  /* Color */
+  --color-black: #2d2d2d;
+  --color-dark-black: #202020;
+  --color-grey: #e5e5e5;
+  --color-dark-grey: #c5c5c5;
+  --color-white: #f2f2f2;
+  --color-light-white: #ffffff;
+  --color-blue: #5282f5;
+
+  /* Font size */
+  --font-medium: 1.3rem;
+  --font-regular: 1.1rem;
+
+  /* Border */
+  --border: solid 1px var(--color-dark-grey);
+}
+
+/* Universal */
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Workout */
+.workout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  list-style: none;
+  background-color: var(--color-grey);
+  border-top: var(--border);
+  border-bottom: var(--border);
+}
+
+.workout:hover {
+  background-color: var(--color-dark-grey);
+}
+
+.workout__text {
+  font-size: var(--font-medium);
+  color: var(--color-black);
+}
+
+.workout__count {
+  display: inline-block;
+  text-align: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5em;
+  color: var(--color-light-white);
+  background-color: var(--color-blue);
+  border-radius: 50%;
+}
+
+.workout__btn {
+  margin: 0 0.1em;
+  font-size: var(--font-medium);
+  color: var(--color-black);
+}
+
+.workout__delete {
+  font-size: var(--font-regular);
+}
+
+.workout__btn:hover {
+  color: var(--color-blue);
+}
