@@ -15,6 +15,7 @@
 
   /* Border */
   --border: solid 1px var(--color-dark-grey);
+  --border-radius: 4px;
 }
 
 /* Universal */
@@ -30,6 +31,42 @@ button {
 
 ul {
   padding-left: 0;
+  margin-top: 0;
+}
+
+/* Add form */
+.add-form {
+  display: flex;
+  padding: 1em;
+  background-color: var(--color-grey);
+}
+
+.add-form__select,
+.add-form__input {
+  padding: 0.25em;
+  font-size: var(--font-regular);
+  color: var(--color-black);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  outline: none;
+}
+
+.add-form__input {
+  width: 100%;
+  margin: 0 1em;
+}
+
+.add-form__btn {
+  padding: 0.25em 1em;
+  font-size: var(--font-regular);
+  color: var(--color-light-white);
+  background-color: var(--color-black);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.add-form__btn:hover {
+  opacity: 0.9;
 }
 
 /* Workout */

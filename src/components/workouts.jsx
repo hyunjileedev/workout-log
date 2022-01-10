@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AddForm from './add-form';
 import Workout from './workout';
 
 class Workouts extends Component {
@@ -13,6 +14,15 @@ class Workouts extends Component {
       },
       { id: 3, name: 'crunch', category: 'upper', count: 4 },
     ],
+  };
+
+  handleAdd = (category, name) => {
+    this.setState(state => ({
+      workouts: [
+        ...state.workouts,
+        { id: Date.now(), name, category, count: 0 },
+      ],
+    }));
   };
 
   handleIncrement = workout =>
@@ -46,17 +56,20 @@ class Workouts extends Component {
 
   render() {
     return (
-      <ul className="workouts">
-        {this.state.workouts.map(workout => (
-          <Workout
-            key={workout.id}
-            workout={workout}
-            onIncrement={this.handleIncrement}
-            onDecrement={this.handleDecrement}
-            onDelete={this.handleDelete}
-          />
-        ))}
-      </ul>
+      <>
+        <AddForm onAdd={this.handleAdd} />
+        <ul className="workouts">
+          {this.state.workouts.map(workout => (
+            <Workout
+              key={workout.id}
+              workout={workout}
+              onIncrement={this.handleIncrement}
+              onDecrement={this.handleDecrement}
+              onDelete={this.handleDelete}
+            />
+          ))}
+        </ul>
+      </>
     );
   }
 }
