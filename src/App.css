@@ -23,6 +23,16 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -30,8 +40,63 @@ button {
 }
 
 ul {
+  list-style: none;
   padding-left: 0;
   margin-top: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1 1 20%;
+  padding: 2em;
+  color: var(--color-light-white);
+  background-color: var(--color-black);
+}
+
+.sidebar__title {
+  margin-top: 0;
+  font-size: var(--font-medium);
+  white-space: nowrap;
+}
+
+.sidebar__count {
+  margin: 1.5em 0;
+  font-size: var(--font-regular);
+}
+
+.count__name {
+  margin: 0 0.5em;
+}
+
+.count__number {
+  margin-left: 1em;
+  font-size: var(--font-medium);
+  font-weight: bold;
+  color: var(--color-blue);
+}
+
+.sidebar__btn {
+  padding: 0.25em 0.5em;
+  margin-top: 1em;
+  font-size: var(--font-regular);
+  color: var(--color-dark-black);
+  background-color: var(--color-light-white);
+  border: var(--border);
+  border-color: var(--color-black);
+  border-radius: var(--border-radius);
+}
+
+.sidebar__btn:hover {
+  opacity: 0.9;
+}
+
+/* Workouts */
+.workouts {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 80%;
+  height: 100%;
+  background-color: var(--color-grey);
 }
 
 /* Add form */
@@ -39,6 +104,7 @@ ul {
   display: flex;
   padding: 1em;
   background-color: var(--color-grey);
+  border-bottom: var(--border);
 }
 
 .add-form__select,
@@ -75,9 +141,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  list-style: none;
   background-color: var(--color-grey);
-  border-top: var(--border);
   border-bottom: var(--border);
 }
 
