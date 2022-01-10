@@ -1,52 +1,41 @@
 import React, { Component } from 'react';
 
 class AddForm extends Component {
-  state = {
-    selectValue: '',
-    inputValue: '',
-  };
+  selectRef = React.createRef();
+  inputRef = React.createRef();
 
   handleSubmit = e => {
     e.preventDefault();
-    const selectValue = this.state.selectValue;
-    const inputValue = this.state.inputValue;
+
+    const selectValue = this.selectRef.current.value;
+    const inputValue = this.inputRef.current.value;
     if (selectValue === '') {
-      window.alert('Please select a category');
+      window.alert('Please select workout category');
       return;
     }
+    if (!/\S/.test(inputValue)) {
+      window.alert('Please enter workout name');
+      return;
+    }
+
     this.props.onAdd(selectValue, inputValue);
+    this.inputRef.current.value = '';
+    this.inputRef.current.focus();
   };
-
-  handleSelectChange = e =>
-    this.setState(state => ({
-      ...state,
-      selectValue: e.target.value,
-    }));
-
-  handleInputChange = e =>
-    this.setState(state => ({
-      ...state,
-      inputValue: e.target.value,
-    }));
 
   render() {
     return (
       <form className="add-form" onSubmit={this.handleSubmit}>
-        <select
-          className="add-form__select"
-          value={this.state.selectValue}
-          onChange={this.handleSelectChange}
-        >
+        <select ref={this.selectRef} className="add-form__select">
           <option value="">Category</option>
           <option value="upper">Upper</option>
           <option value="lower">Lower</option>
         </select>
         <input
+          ref={this.inputRef}
           type="text"
           className="add-form__input"
           placeholder="Add a workout item"
-          value={this.state.inputValue}
-          onChange={this.handleInputChange}
         />
         <button type="submit" className="add-form__btn">
           Add
