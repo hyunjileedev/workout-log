@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import AddForm from './add-form';
 import Workout from './workout';
 
-class Workouts extends Component {
+class WorkoutEditor extends Component {
   render() {
     return (
-      <main className="workouts">
+      <main className="workoutEditor">
         <AddForm onAdd={this.props.onAdd} />
         <ul className="workouts">
           {this.props.workouts.map(workout => (
@@ -23,4 +23,4 @@ class Workouts extends Component {
   }
 }
 
-export default Workouts;
+export default WorkoutEditor;

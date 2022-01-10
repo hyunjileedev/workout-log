@@ -42,7 +42,7 @@ button {
 ul {
   list-style: none;
   padding-left: 0;
-  margin-top: 0;
+  margin: 0;
 }
 
 /* Sidebar */
@@ -78,20 +78,22 @@ ul {
 .sidebar__btn {
   padding: 0.25em 0.5em;
   margin-top: 1em;
+  margin-right: 0.5em;
   font-size: var(--font-regular);
   color: var(--color-dark-black);
   background-color: var(--color-light-white);
   border: var(--border);
   border-color: var(--color-black);
   border-radius: var(--border-radius);
+  white-space: nowrap;
 }
 
 .sidebar__btn:hover {
   opacity: 0.9;
 }
 
-/* Workouts */
-.workouts {
+/* Workout editor */
+.workoutEditor {
   display: flex;
   flex-direction: column;
   flex: 1 1 80%;
@@ -119,7 +121,7 @@ ul {
 
 .add-form__input {
   width: 100%;
-  margin: 0 1em;
+  margin: 0 0.5em;
 }
 
 .add-form__btn {
@@ -133,6 +135,11 @@ ul {
 
 .add-form__btn:hover {
   opacity: 0.9;
+}
+
+/* Workouts */
+.workouts {
+  overflow-y: scroll;
 }
 
 /* Workout */

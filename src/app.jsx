@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './app.css';
 import Sidebar from './components/sidebar';
-import Workouts from './components/workouts';
+import WorkoutEditor from './components/workout-editor';
 
 class App extends Component {
   state = {
@@ -77,7 +77,7 @@ class App extends Component {
           onReset={this.handleReset}
           onClear={this.handleClear}
         />
-        <Workouts
+        <WorkoutEditor
           workouts={this.state.workouts}
           onAdd={this.handleAdd}
           onIncrement={this.handleIncrement}
