@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class Workout extends Component {
+class Workout extends PureComponent {
   render() {
     const workout = this.props.workout;
     const { name, category, count } = workout;

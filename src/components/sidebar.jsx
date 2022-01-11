@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Button from './button';
 
-class Sidebar extends Component {
+class Sidebar extends PureComponent {
   render() {
     const { upperCount, lowerCount } = this.props;
     return (

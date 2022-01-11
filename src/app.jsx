@@ -63,7 +63,13 @@ class App extends Component {
 
   handleReset = () =>
     this.setState(state => ({
-      workouts: state.workouts.map(workout => ({ ...workout, count: 0 })),
+      workouts: state.workouts.map(workout => {
+        if (workout.count === 0) {
+          return workout;
+        } else {
+          return { ...workout, count: 0 };
+        }
+      }),
     }));
 
   handleClear = () => this.setState({ workouts: [] });
