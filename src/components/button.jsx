@@ -4,7 +4,7 @@ class Button extends PureComponent {
   render() {
     return (
       <button className={this.props.class} onClick={this.props.onClick}>
-        {this.props.value}
+        {this.props.children}
       </button>
     );
   }

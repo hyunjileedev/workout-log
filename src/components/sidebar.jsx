@@ -24,16 +24,12 @@ class Sidebar extends PureComponent {
             <span className="count__number">{lowerCount}</span>
           </li>
         </ul>
-        <Button
-          class="sidebar__btn"
-          value="Reset counts"
-          onClick={this.props.onReset}
-        ></Button>
-        <Button
-          class="sidebar__btn"
-          value="Clear items"
-          onClick={this.props.onClear}
-        ></Button>
+        <Button class="sidebar__btn" onClick={this.props.onReset}>
+          Reset counts
+        </Button>
+        <Button class="sidebar__btn" onClick={this.props.onClear}>
+          Clear items
+        </Button>
       </aside>
     );
   }
