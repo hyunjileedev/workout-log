@@ -59,13 +59,14 @@ ul {
   white-space: nowrap;
 }
 
-.sidebar__count {
+.count {
   margin: 1.5em 0;
   font-size: var(--font-regular);
 }
 
 .count__name {
   margin: 0 0.5em;
+  text-transform: capitalize;
 }
 
 .count__number {
