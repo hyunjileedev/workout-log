@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/workout-log/static/css/main.da390ae0.css",
+    "main.js": "/workout-log/static/js/main.5ed71c7f.js",
+    "index.html": "/workout-log/index.html",
+    "main.da390ae0.css.map": "/workout-log/static/css/main.da390ae0.css.map",
+    "main.5ed71c7f.js.map": "/workout-log/static/js/main.5ed71c7f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da390ae0.css",
+    "static/js/main.5ed71c7f.js"
+  ]
+}
