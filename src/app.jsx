@@ -40,7 +40,7 @@ const App = () => {
     workout =>
       setWorkouts(workouts =>
         workouts.map(el => {
-          if (el.id !== workout.id) {
+          if (el.id === workout.id) {
             const count = el.count - 1 < 0 ? 0 : el.count - 1;
             return { ...el, count };
           }
