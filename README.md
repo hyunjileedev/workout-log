@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1>Workout Log 💪 </h1>
 
-## Available Scripts
+<p>리액트 실습 목적의 프로젝트<br>
+운동 카운트를 기록하고, 통합 카운트를 확인할 수 있는 어플리케이션</p>
 
-In the project directory, you can run:
+<a href="https://hyunjileedev-workout-log.netlify.app/">데모 링크</a>
 
-### `yarn start`
+<img width="500" src="https://user-images.githubusercontent.com/79075688/149611970-0b948cbc-37e9-4f5b-ae86-bcb3056c67a9.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `yarn test`
+## 🛠 사용 기술 및 개념
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+  - Class components: PureComponent
+  - Function components: memo, Hooks
+- Create React App
+- Netlify
 
-### `yarn build`
+## 🎯 주요 기능
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 운동동작 추가/삭제, 카운트 기록
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![items](https://user-images.githubusercontent.com/79075688/149611743-782b9ca0-1470-4a62-b445-15aa9b357fdc.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 통합 카운트 확인 및 리셋, 전체 삭제
 
-### `yarn eject`
+![counts](https://user-images.githubusercontent.com/79075688/149611740-4e550cb1-906b-458a-b686-2daec70caf00.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📝 새롭게 배운 점
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 리액트 메인컨셉들과 Hooks에 대한 이해
+- 패키지 매니저를 통해 프로젝트와 패키지들을 관리하는 방식
+- Netlify가 제공하는 Continuous Deployment
